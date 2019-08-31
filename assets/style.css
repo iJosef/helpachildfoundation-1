@@ -1,0 +1,97 @@
+/* The code below is for the page footers */
+#footer{
+    overflow: hidden;
+    margin-left: 0;
+}
+#about_footer{
+    background-color: rgb(2, 2, 37);
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    bottom: 0px;
+}
+#about_contact, #about_contactform{
+    position: absolute;
+    color: white;
+    font-size: 1em;
+    bottom: 350px;
+    font-family: 'Manjari';
+    font-weight: bold;
+}
+#about_contactform{
+    /* left: 400px;
+    right: 50px; */
+    margin-left: 70vw;
+    margin-right: 10vw;
+}
+#about_contact{
+    margin-left: 38vw;
+}
+#line1, #line2 {
+    display: inline-block;
+    color: white;
+    position: absolute;
+    bottom: 330px;
+}
+#line1{
+    margin-left: 37.7vw;
+    width: 110px;
+}
+#line2{
+    margin-left: 69.7vw;
+    width: 180px;;
+}
+footer>span{
+    color: white;
+    font-size: 1em;
+    margin-left: 36vw;
+    position: absolute;
+    bottom: 300px;
+}
+#address{
+    color: white;
+    font-size: (1em + 1vw);
+    position: absolute;
+    bottom: 270px;
+    margin-left: 38vw;
+}
+#logo1, #logo2{
+    background-color: white;
+    margin-left: 2.5vw;
+    position: absolute;
+}
+#logo2{
+    width: 15px;
+    height: 20px;
+     bottom: 335px;
+}
+#logo1{
+    width: 35px;
+    height: 10px;
+    bottom: 350px;
+}
+#logoname{
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 320px;
+    margin-left: 75px;;
+}
+#form{
+    display: inline-block;
+    margin-left: 70vw;
+    position: absolute;
+    bottom: 100px;
+}
+#formname, #formemail, #formcomment{
+    width: 20vw;
+    padding: 10px;
+}
+#formcomment{
+    height: 40px;
+}
+#formsubmit{
+    width: 6vw;
+    height: 30px;
+}
+

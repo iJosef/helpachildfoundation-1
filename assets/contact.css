@@ -1,0 +1,151 @@
+.navul{
+    text-align: center;
+}
+.navlist{
+    display: inline;
+    background-color: rgb(2, 2, 37);
+    color: white;
+    padding:  1vw 2vw;
+    font-size: calc(0.5em + 0.6vw);
+    line-height: 20px;
+    border-radius: 5px;
+}
+#loginlink{
+    text-decoration: none;
+    background-color: rgb(2, 2, 37);
+    color: white;
+    padding: 1vw 3vw;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 2px black;
+}
+#loginlinkdiv{
+    text-align: right;
+    display: inline-block;
+    font-size: calc(0.6em + 0.6vw);
+}
+#text1{
+    margin-left: 60vw;
+    padding-right: 30px;
+    font-size: calc(0.5em + 0.6vw);
+}
+h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#h3_1{
+    text-align: left;
+    margin-left: 33vw;
+}
+#contactinfo{
+    align-items: center;
+    width: auto;
+    height: auto;
+    border: 3px solid rgb(2, 2, 37);
+    display: inline-block;
+    margin-left: 33vw;
+}
+
+#h3_2{
+    margin-left: 33vw;
+}
+#contactform{
+    margin-left: 33vw;
+}
+.form1{
+    width: 20vw;
+    padding: 10px;
+    height: 40px;
+    border: 3px solid grey;
+}
+#submit{
+    width: 80px;
+    height: 30px;
+    border: 2px solid grey;
+}
+
+
+/* The code below is for the page footers */
+#footer{
+    margin-left: 0;
+}
+#about_footer{
+    background-color: rgb(2, 2, 37);
+    width: 100vw;
+    height: 400px;
+}
+#logo1, #logo2{
+    background-color: white;
+    margin-left: 2.5vw;
+    position: absolute;
+}
+#logo2{
+    width: 15px;
+    height: 20px;
+}
+#logo1{
+    width: 35px;
+    height: 10px;
+}
+#logoname{
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    margin-left: 75px;
+}
+#about_contact, #about_contactform{
+    color: white;
+    font-size: 1em;
+    font-family: 'Manjari';
+    font-weight: bold;
+    display: inline-block;
+}
+#about_contactform{
+    /* left: 400px;
+    right: 50px; */
+    margin-left: 70vw;
+    margin-top: 0;
+}
+#about_contact{
+    margin-left: 38vw;
+    margin-top: 0;
+}
+#line1, #line2 {
+    display: inline-block;
+    color: white;
+    
+}
+#line1{
+    margin-left: 37.7vw;
+    width: 110px;
+}
+#line2{
+    margin-left: 69.7vw;
+    width: 180px;;
+}
+footer>span{
+    color: white;
+    font-size: 1em;
+    margin-left: 36vw;
+}
+#address{
+    color: white;
+    font-size: (1em + 1vw);
+    margin-left: 38vw;
+}
+
+#form{
+    display: inline-block;
+    margin-left: 70vw;
+}
+#formname, #formemail, #formcomment{
+    width: 20vw;
+    padding: 10px;
+}
+#formcomment{
+    height: 40px;
+}
+#formsubmit{
+    width: 6vw;
+    height: 30px;
+}
+
