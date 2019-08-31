@@ -34,7 +34,7 @@ h2{
 }
 #h3_1{
     text-align: left;
-    margin-left: 25vw;
+    margin-left: 33vw;
 }
 #contactinfo{
     align-items: center;
@@ -42,14 +42,14 @@ h2{
     height: auto;
     border: 3px solid rgb(2, 2, 37);
     display: inline-block;
-    margin-left: 25vw;
+    margin-left: 33vw;
 }
 
 #h3_2{
-    margin-left: 25vw;
+    margin-left: 33vw;
 }
 #contactform{
-    margin-left: 25vw;
+    margin-left: 33vw;
 }
 .form1{
     width: 20vw;
