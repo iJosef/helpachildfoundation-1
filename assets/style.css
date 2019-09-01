@@ -46,3 +46,60 @@ body{
   #navbar .join a{
       color: white;
   }
+  .container{
+      display: block;
+      background:#0E083D;
+      width: 100%;
+      padding: 10px;
+      height: auto;
+      overflow: hidden;
+  }
+  .container .logo{
+    color: white;
+    width: 25%;
+    background:#0E083D;
+    padding: 10px;
+  }
+ #contact{
+    color: white;
+    text-align: center;
+    width: 35%;
+    background:#0E083D;
+    padding: 10px;
+    overflow: hidden;
+
+  }
+  .container #contact hr{
+      width: 40%;
+  }
+  .container .message{
+    color: white;
+    width: 30%;
+    background:#0E083D;
+    padding: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  .container .message hr{
+    width: 83%;
+    text-align: left;
+    margin-left: 0;
+}
+.container .message input{
+    width: 95%;
+    padding:10px 0;
+    margin-top: 10px;
+}
+.container .message h2{
+    text-align: center;
+}
+.container .message textarea { 
+    width: 95%; 
+    height: 10em; 
+    margin-top: 10px;
+}
+.container .message button{
+    color:white;
+    padding: 5px;
+    border-radius: 5px;
+}
