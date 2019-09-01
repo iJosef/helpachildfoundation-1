@@ -10,7 +10,150 @@
 </head>
 
 <body>
+    
+    <div class="home-bg">
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="as">Ratanka</a>
+            <a href="#join" class="nav-link btn join">Join Us</a>
+            <a href="#about" class="nav-link">Our Team</a>
+            <a href="#contact" class="nav-link">About Us</a>
+            <a href="#news" class="nav-link">Home</a>
 
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+        <p class="intro">Donate to help the childern <br>for a better tommorrow</p>
+    </div>
+    <!-- wrapper -->
+    
+    <div id="wrapper1">
+
+        <div id="wrapper2">
+
+            <!-- donation-info -->
+            <div class="title">
+                <h2>Divided evenly</h2>
+                <p>Your Donations will be dividely evenly<br>across all projects</p>
+            </div>
+
+            <div class="title">
+                <h2>Transparency</h2>
+                <p>Your Donations will be accounted for<br>and declared publicly</p>
+            </div>
+
+            <div class="title">
+                <h2>Trustworthy</h2>
+                <p>Your Donations will be secured by Flutterwave<br>the most secure payment platform in Africa</p>
+            </div>
+            <!-- end of donation-info -->
+
+            <!--form-->
+            <div id="form">
+                <form method="post" action="javascript:;">
+                    <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+                    <p>Please fill the form below</p>
+                    <p id="err"></p>
+                    <hr>
+                    <input type="text" class="form-input" id="name" placeholder="Name*" required/><br><br>
+                    <input type="text" class="form-input" id="phone" placeholder="Phone*" required/><br><br>
+                    <input type="email" class="form-input" id="email" placeholder="Email*" required/><br><br>
+                    <input type="text" class="form-input" id="amount" placeholder="Donation Amount(Naira)*" required><br><br>
+                    <button class="btn btn-primary" href="javascript:;" id="donate">Donate Now</button>
+
+                    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+                    <script>
+				       $(document).ready(function(){
+
+					     $('button#donate').click(function(){
+					      var name = $('#name').val();
+					      var email = $('#email').val();
+					      var phone = $('#phone').val();
+					      var amount = $('#amount').val();
+					      var err = $('#err');
+					      var ret = name.split(" ");
+					      var fname = ret[0];
+					      var sname = ret[1];
+
+					      if (name == '' || email == '' || phone == '' || amount == '') {
+					        err.html('<span class="alert alert-danger">Please Fill All Fields</span>');
+					        return false;
+					      } else {
+
+					      payWithRave(name, email, phone, amount, fname, sname);
+					      } 
+
+
+					    function payWithRave(name, email, phone, amount, fname, sname) {
+					    const API_publicKey = "FLWPUBK_TEST-a330e3181e548e49b466db18f2b0e2ab-X";
+					        var chargeResponse = "",
+						        trxref = "HACF" + Math.random();// add your transaction ref here
+						      getpaidSetup({
+						        customer_email: email,// 
+						        amount: amount,
+						        currency: "NGN",
+						        country: "NG",
+						        custom_title: "HelpAChild Foundation",
+						        txref: trxref,
+						        PBFPubKey: API_publicKey,
+						        onclose: function(response) {},
+						        callback: function(response) {
+						          //flw_ref = response.tx.flwRef;
+						          console.log("Your payment was successful, You will be redirected shortly", response);
+						          if(response.tx.chargeResponseCode =='00' || response.tx.chargeResponse == '0') {
+						            success();
+						          } else {
+						            // redirect to a failure page.
+						          }
+						        }
+						      });
+					    }
+
+					    function success() {
+					    	window.location.replace('success.html');
+					    }
+
+
+					     });
+					    })
+					  </script>
+                </form>
+            </div>
+            <!-- end of form-->
+        </div>
+    </div>
+    <!-- end of wrapper -->
+          <!-- FOOTER -->
+    <footer class="footer-color" id="contact">
+            <div class="container container-1">
+              <div class="box-1">
+                  <h4 class="logo"><img class="logo-img" src="img/helpAChildLogo1_a0ntag.png" alt="logo" width="50" height="50">Ratanka</h4>
+                  <small><em>Challenge child protection</em></small>
+              </div>
+              <div class="box-1">
+                  <h3 class="c-us">Contact us</h3>
+                  <div class="line"></div>
+                  <p>3, Birrel Avenue, Sabo, <div>Yaba, Lagos</div> </p>
+              </div>
+              <div class="box-1">
+                  <h3 class="l-msg">Leave us a message</h3>
+                  <div class="line-2"></div>
+                  <div class="input-field">
+                      <input class="input-name" type="text" placeholder="Name" required>
+                    </div>
+                    <div class="input-email">
+                      <input type="text" placeholder="Email" required>
+                    </div>
+                    <div class="input-message">
+                        <textarea name="message" placeholder="Comment"></textarea>
+                    </div>
+                    <div class="input-btn">
+                      <button type="button">Send</button>
+                    </div>
+              </div>
+            </div>
+          </footer>
+<script src="assets/script.js"></script>
 </body>
 
 </html>

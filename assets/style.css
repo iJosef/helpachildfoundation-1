@@ -1,0 +1,349 @@
+/* homepage */
+
+body {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.home-bg {
+    background: linear-gradient(rgba(161, 120, 120, 0.6), rgba(160, 121, 121, 0.6)), url("../img/home-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 20px 50px 150px 50px;
+}
+
+.intro {
+    padding: 120px 70px 0 70px;
+    font-size: 48px;
+    color: #ffffff;
+}
+
+.donate-btn {
+    margin-left: 70px;
+    font-weight: bold;
+    margin-top: 0;
+    line-height: 0px;
+}
+
+.btn {
+    background-color: rgb(41, 26, 82);
+    padding: 10px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.donate-btn:hover {
+    color: rgb(41, 26, 82);
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.topnav a {
+    display: block;
+    text-align: center;
+    padding: 4px 6px;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(41, 26, 82);
+}
+
+.topnav a.join {
+    color: #ffffff;
+    padding: 5px 20px;
+}
+
+.topnav a.join:hover {
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+.as {
+    float: left;
+}
+
+.nav-link {
+    color: white;
+    border-bottom: 1px solid rgb(41, 26, 82);
+    margin: 0 20px;
+    float: right;
+}
+
+.topnav a:hover {
+    font-weight: bold;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.nav-link {
+    color: black;
+    border-bottom: 2px solid rgb(41, 26, 82);
+}
+
+.content {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.content-head {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #242224;
+}
+
+.content-body {
+    text-align: center;
+    color: #242224;
+}
+
+.request {
+    width: 30%;
+    float: left;
+    margin: 10px 15px;
+}
+
+.request .main {
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 2px 15px rgb(61, 65, 61);
+}
+
+.request .main .head {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.request .main .body {
+    text-align: center;
+    font-size: 16px;
+}
+
+.main-bg1 {
+    background-color: #2D284E;
+}
+
+.main-bg2 {
+    background-color: #413a3a;
+}
+
+.main-bg3 {
+    background-color: #FFBD12;
+}
+
+.request .sub {
+    width: 50%;
+    margin: 25px auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 560px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .intro {
+        padding: 80px 0px 0 5px;
+        font-size: 24px;
+        color: #ffffff;
+    }
+    .donate-btn {
+        margin-left: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    .home-bg {
+        padding: 20px 20px 150px 20px;
+    }
+    .nav-link {
+        color: white;
+        border-bottom: 0;
+        margin: 10px 20px;
+        float: right;
+    }
+    .content {
+        width: 90%;
+    }
+    .content-head {
+        font-size: 16px;
+    }
+    .content-body {
+        font-size: 14px;
+    }
+    .request {
+        width: 80%;
+        padding: 20px;
+        float: left;
+        margin: -15px 15px;
+    }
+    .request .main .head {
+        font-size: 16px;
+    }
+    .request .main .body {
+        font-size: 14px;
+    }
+    .request .sub {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 760px) and (min-width: 561px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .intro {
+        padding: 80px 20px 0 15px;
+        font-size: 36px;
+        color: #ffffff;
+    }
+    .nav-link {
+        color: white;
+        border-bottom: 1px solid rgb(41, 26, 82);
+        margin: 10px 10px;
+        float: right;
+    }
+    .donate-btn {
+        margin-left: 20px;
+        padding: 10px 50px;
+        border-radius: 5px;
+    }
+    .home-bg {
+        padding: 20px 50px 150px 15px;
+    }
+    .request {
+        width: 24%;
+        padding: 20px;
+        float: left;
+        background-color: #434343;
+        margin: 7px;
+    }
+}
+#wrapper2{
+        width:1000px;
+        height:400px;
+        margin:10px auto;
+        border:10px solid #AFAAAA;
+        padding:80px;
+    }
+    .title{
+    color:#3e3b4f;
+    margin:20px;
+    font-weight: ;
+    font-family:sans-serif;
+
+}
+
+#form{
+    display:block;
+    border:2px solid #979699;
+    text-align:center;
+    margin-top: -320px;
+    margin-right: 10px;
+    float:right;
+    padding:10px;
+
+}
+
+#form p{
+    color:#2C1F41;
+    font-family:sans-serif;
+}
+
+.form-input{
+    padding:15px 15px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.form-input2{
+    padding:15px 15px;
+    width: 130px;
+    border-radius: 5px;
+    
+}
+  
+
+  .footer-color{
+    background: rgb(4, 4, 17);
+    margin-top: 87vh;
+    height: 70vh;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container-1{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 3vh;
+    }
+  }
+  .box-1{
+    flex-basis: 70%;
+    color: #fff;
+  }
+  
+  .c-us, .l-msg{
+    text-transform: uppercase;
+    word-spacing: 5px;
+  }
+  .logo{
+    margin-bottom: 7vh;
+  }
+  .line{
+    border-bottom: 2px solid #fff;
+    width: 124px;
+    margin-bottom: 5vh;
+  }
+  .line-2{
+    border-bottom: 2px solid #fff;
+    width: 225px;
+    margin-bottom: 5vh;
+  }
+  .input-name{
+  margin-bottom: 2vh;
+  }
+  
