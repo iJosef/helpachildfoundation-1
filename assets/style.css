@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+}
+/* floated divs styling */
+.left{
+    float: left;
+}
+.left a{
+    text-decoration: none;
+}
+.right{
+    float:right;
+}
+
+.clear{
+    clear: both;
+}
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    
+    height: 100px;
+    padding: 20px;
+  }
+  
+  /* Navbar links */
+  #navbar .right ul li{
+      text-decoration: none;
+      display: inline;
+      font-weight: 800;
+      font-size: 20px;
+  }
+  #navbar li a {
+    display: inline;
+    color: #0E083D;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  .join a{
+      background: #0E083D;
+      color: white;
+  }
+  #navbar .join a{
+      color: white;
+  }
