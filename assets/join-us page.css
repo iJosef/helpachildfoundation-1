@@ -1,0 +1,114 @@
+/* i used flex box so that this page will be responsive across different platforms, i also use only css and HTML no frame work */
+
+/* all colors are as sketched in the figma wire frame. */
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+#nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#nav > span > img {
+    margin: 20px 24px;
+}
+
+.nav-links > ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 24px;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+.nav-links > ul > li > button{
+    width: 130px;
+    height: 45px;
+    margin-left: 17px;
+    margin: 0px;
+    font-size: 1.0em;
+}
+
+.nav-links > ul > li > a{
+    line-height: 58px;
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+.spacer{
+    display: flex;
+    flex: 1;
+}
+
+#form{
+    width: 435px;
+    margin: 0 auto;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 8px;;
+}
+
+.icons> img{
+    width: 45px;
+    height: 45px;
+}
+
+.icons> p{
+    font-size: 12px;
+}
+
+input{
+width: 430px;
+height: 55px;
+background: #FFFFFF;
+box-sizing: border-box;
+margin: 17px 2.21px;
+padding: 20px;
+color: #000000;
+font-size: 1.0em;
+border: none;
+border-bottom: 2px solid rgba(133, 142, 219, 0.63);
+border-right: 2px solid rgba(133, 142, 219, 0.63);
+}
+
+button{
+width: 430px;
+margin: 25px 2.21px;
+height: 45px;
+background: #2D284E;
+color: white;
+font-size: 1.2em;
+border: none;
+}
+
+#form > p{
+font-size: 24px;
+line-height: 33px;
+text-align: center;
+}
+
+ h1{
+    width: 100%;
+    font-family: 'Noto Serif', serif;
+    font-size: 36px;
+    line-height: 87px;
+    color: #000000;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.password-details{
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
